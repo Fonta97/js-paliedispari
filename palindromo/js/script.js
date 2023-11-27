@@ -5,10 +5,10 @@ const parola = prompt("Dammi una parola e ti diro se è palindroma");
 function Palindrome(parola) {
 
     // creo una variabile len che mi rappresenta la lunghezza della parola / 2
-    var len = (parola.length / 2);
+    let len = (parola.length / 2);
 
     // creo un ciclo for in cui rimango al suo interno finchè i non sarò maggiore di len
-    for (var i = 0; i < len; i++)
+    for (let i = 0; i < len; i++)
 
         // if in cui controllo se la lettera n[i] della parola (parola) è diversa lettera n[i] dell'altra metà della parola (-1 perchè gli array partono da 0)  
         if (parola[i] !== parola[parola.length - i - 1]) {
