@@ -1,7 +1,6 @@
 
 const userChoice = prompt("Scegli se PARI o DISPARI");
 const nUser = parseInt(prompt("Gerry è tornato. Ti punta il ferro e ti urla di dargli un numero da 1 a 5!"));
-const nComputer = randomNumber()
 
 if (userChoice === "PARI") {
     if (sumEvenOrOdd() === "pari") {
@@ -27,20 +26,21 @@ if (userChoice === "PARI") {
 
 
 function randomNumber() {
-    return Math.floor(Math.random() * 5 - 1) + 1;
+
+    return Math.floor(Math.random() * 5 + 1);
 }
 
 function sumEvenOrOdd() {
-    let nSum = nUser + randomNumber()
+    let nSum = nUser + randomNumber();
     console.log("valore nSum", nSum);
-    let pari = "pari"
-    let dispari = "dispari"
+    let pari = "pari";
+    let dispari = "dispari";
 
     if (nSum % 2 === 0) {
-        return pari
-        console.log("somma pari", pari);
+        // console.log("somma pari", pari);
+        return pari;
     } else {
-        return dispari
-        console.log("somma dispari", dispari);
+        // console.log("somma dispari", dispari);
+        return dispari;
     }
 }
